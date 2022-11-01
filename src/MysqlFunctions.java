@@ -8,7 +8,7 @@ public class MysqlFunctions
 
 	public void addIntoDatabase() throws SQLException
 	{
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","root");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DataBase-name","username","password");
 		Statement stmt = con.createStatement();
 
 		Scanner sc = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class MysqlFunctions
 
 	public void showFromDatabase() throws SQLException
 	{
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","root");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DataBase-name","username","password");
 		Statement stmt = con.createStatement();
 		String s  = "SELECT * FROM user_info";
 
@@ -48,7 +48,7 @@ public class MysqlFunctions
 
 	public void deleteFromDatabse()throws SQLException
 	{
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","root");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DataBase-name","username","password");
 		Statement stmt = con.createStatement();
 
 		Scanner sc = new Scanner(System.in);
